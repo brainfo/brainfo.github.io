@@ -15,7 +15,7 @@ tags:
 
 ## 前言
 
-Rube 的 Blog 就这么开通了。
+Ruby 的 Blog 就这么开通了。
 
 
 
