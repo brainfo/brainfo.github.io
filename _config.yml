@@ -1,9 +1,9 @@
 # Site settings
-title: BraInfo
+title: Brainfo
 SEOTitle: Ruby Blog
-header-img: /img/head.jpeg
+header-img: /img/start.jpeg
 email: scilavisher@gmail.com
-description: "on Bioinfo Data Reading and Writing | Ruby，Bioinfoer on Brain science, ustc"
+description: "on Bioinfo Data Reading and Writing | Ruby，Bioinfomer on Brain science, ustc"
 keyword: "life, bio, data, program, reading"
 url: "https://brainfo.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
