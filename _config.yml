@@ -1,7 +1,7 @@
 # Site settings
 title: Brainfo
 SEOTitle: Ruby Blog
-header-img: /img/start.jpeg
+header-img: img/start.jpeg
 email: scilavisher@gmail.com
 description: "on Bioinfo Data Reading and Writing | Ruby，Bioinfomer on Brain science, ustc"
 keyword: "life, bio, data, program, reading"
