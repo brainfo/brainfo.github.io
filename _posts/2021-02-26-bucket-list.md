@@ -5,7 +5,7 @@ subtitle:   " \"The Future belongs to those who believe in the beauty of their d
 date:       2021-02-26
 author:     "Ruby"
 header-img: "/img/in-post/post-bucket-list/dreams-quotes-02a.jpg"
-catalog: daily affairs
+catalog: true
 tags:
     - 生活
 ---
