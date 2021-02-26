@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      "Bucket List"
+subtitle:   " \"The Future belongs to those who believe in the beauty of their dreams.\""
+date:       2021-02-26
+author:     "Ruby"
+header-img: "/img/in-post/post-bucket-list/dreams-quotes-02a.jpg"
+catalog: true
+tags:
+    - 生活
+---
+
+
+
 # Bucket List
 
 ![dream](D:\mypage\brainfo.github.io\img\in-post\post-bucket-list\dreams-quotes-02a.jpg)
