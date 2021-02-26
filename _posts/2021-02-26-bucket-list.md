@@ -14,7 +14,7 @@ tags:
 
 # Bucket List
 
-![dream](D:\mypage\brainfo.github.io\img\in-post\post-bucket-list\dreams-quotes-02a.jpg)
+![dream](/img/in-post/post-bucket-list/dreams-quotes-02a.jpg)
 
 **These are what I dream to do in my life time. This list will be consistently updated.**
 
