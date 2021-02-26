@@ -12,11 +12,11 @@ tags:
 
 
 
-# Bucket List
-
 ![dream](/img/in-post/post-bucket-list/dreams-quotes-02a.jpg)
 
-**These are what I dream to do in my life time. This list will be consistently updated.**
+**These are what I dream to do in my life time. This list will be consistently updated.** 
+
+
 
 - [ ] Learn interior design and design my own space someday
 - [ ] Learn impressionism and create my own artwork someday
