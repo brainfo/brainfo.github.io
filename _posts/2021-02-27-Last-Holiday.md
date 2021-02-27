@@ -22,9 +22,11 @@ tags:
 
 ## Writing background and method part of my Thesis
 
-![family](/img/in-post/post-last-holiday/family.jpg)
+
 
 ## Farewell to my Holiday
+
+![family](/img/in-post/post-last-holiday/family.jpg)
 
 今天是我这个漫长（除去路途时间，16天)假期的最后一天。 
 
