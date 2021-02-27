@@ -21,8 +21,10 @@ tags:
 - [ ] Learn interior design and design my own space someday
 - [ ] Learn impressionism and create my own artwork someday
 - [ ] Learn kickboxing and never avoid conflict since then
+- [ ] Buy roller-skates and use it daily
+- [ ] Get my PhD degree
 
-<p style="text-align: center;"> <code> update on  Feb 26, 2021 </code> </p>
+<p style="text-align: center;"> <code> update on  Feb 25, 2021 </code> </p>
 
 
 
