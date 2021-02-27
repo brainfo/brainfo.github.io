@@ -2,7 +2,7 @@
 layout:     post
 title:      "Last Holiday"
 subtitle:   " \"Home is where love resides, memories are created, friends always belong, and laughter never ends.\""
-date:       2021-02-26
+date:       2021-02-27
 author:     "Ruby"
 header-img: "/img/in-post/post-last-holiday/city.jpg"
 catalog: true
