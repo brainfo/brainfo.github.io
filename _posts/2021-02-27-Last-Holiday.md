@@ -4,7 +4,7 @@ title:      "Last Holiday"
 subtitle:   " \"Home is where love resides, memories are created, friends always belong, and laughter never ends.\""
 date:       2021-02-26
 author:     "Ruby"
-header-img: "/img/in-post/post-last-holiday/family.jpg"
+header-img: "/img/in-post/post-last-holiday/city.jpg"
 catalog: true
 tags:
     - 生活
@@ -21,6 +21,8 @@ tags:
 这一领域还有许多亟待解决的问题。
 
 ## Writing background and method part of my Thesis
+
+![family](/img/in-post/post-last-holiday/family.jpg)
 
 ## Farewell to my Holiday
 
