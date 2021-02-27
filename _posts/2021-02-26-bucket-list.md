@@ -7,7 +7,7 @@ author:     "Ruby"
 header-img: "/img/in-post/post-bucket-list/dreams-quotes-02a.jpg"
 catalog: true
 tags:
-    - 生活
+    - 人生
 ---
 
 
