@@ -10,7 +10,7 @@ tags:
     - labs
 ---
 
-![bioinformatics](/img/in-post/post-bioinformatics-material/bioinformatics.jpg)
+![bioinformatics](/img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
 
 ## Online courses
 
