@@ -10,7 +10,7 @@ tags:
     - labs
 ---
 
-![bioinformatics](/img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
+![bioinformatics](D:\mypage\brainfo.github.io\_posts\img\in-post\post-bioinformatics-materials\bioinformatics.jpg)
 
 ## Online courses
 
