@@ -20,7 +20,8 @@ tags:
 
   MIT 18.650 Statistics for Applications, Fall 2016 
 
-  [View the complete course](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/) 
+  [View the complete course](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/)  
+
   Instructor: Philippe Rigollet
 
 -  计算生物学
