@@ -34,8 +34,6 @@ tags:
 
   [Fall 2020 slides and materials](http://stellar.mit.edu/S/course/6/fa20/6.047/materials.html) 
 
-
-
 - 机器学习
 
   Machine Learning in Genomics: Dissecting the circuitry of Human Disease  
@@ -45,8 +43,6 @@ tags:
   [All slides from Fall 2019 are here](https://stellar.mit.edu/S/course/6/fa19/6.047/materials.html) 
 
   [Course website for latest materials is here](http://stellar.mit.edu/S/course/6/fa20/6.047/) 
-
-
 
 -  深度学习
 
