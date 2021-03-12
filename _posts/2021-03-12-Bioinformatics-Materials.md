@@ -21,7 +21,9 @@ tags:
    MIT 18.650 Statistics for Applications, Fall 2016 
 
    [View the complete course](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/) 
-   Instructor: Philippe Rigollet 
+   Instructor: Philippe Rigollet
+
+   
 
 2.  计算生物学
 
@@ -33,6 +35,8 @@ tags:
 
    [Fall 2020 slides and materials](http://stellar.mit.edu/S/course/6/fa20/6.047/materials.html) 
 
+   
+
 3.  机器学习
 
    Machine Learning in Genomics: Dissecting the circuitry of Human Disease  
@@ -42,6 +46,8 @@ tags:
    [All slides from Fall 2019 are here](https://stellar.mit.edu/S/course/6/fa19/6.047/materials.html) 
 
    [Course website for latest materials is here](http://stellar.mit.edu/S/course/6/fa20/6.047/) 
+
+   
 
 4.  深度学习
 
@@ -68,7 +74,7 @@ tags:
 
 ## Others
 
-- [谷歌python风格指导](https://google.github.io/styleguide/pyguide.html)
+- [谷歌python风格指南](https://google.github.io/styleguide/pyguide.html)
 - 善用github, stackoverflow, google
 - 善用git， jupyter lab和vs code
 
