@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Bioinformatics Materials"
-subtitle:   " \"Home is where love resides, memories are created, friends always belong, and laughter never ends.\""
+subtitle:   " \"Thank god, my genome just compiled.\""
 date:       2021-03-12
 author:     "Ruby"
 header-img: "/img/in-post/post-bioinformatics-material/bioinformatics.jpg"
@@ -10,6 +10,8 @@ tags:
     - labs
 ---
 
+![bioinformatics](/img/in-post/post-bioinformatics-material/bioinformatics.jpg)
+
 ## Online courses
 
 ### MIT open courseware
@@ -17,33 +19,33 @@ tags:
 1.  统计
 
    MIT 18.650 Statistics for Applications, Fall 2016
-   View the complete course: http://ocw.mit.edu/18-650F16
+   [View the complete course](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/)
    Instructor: Philippe Rigollet
 
 2.  计算生物学
 
    6.047/6.878/HST.507 Fall 2020 Prof. Manolis Kellis
    Computational Biology: Genomes, Networks, Evolution, Health
-   Latest slides and course today: http://compbio.mit.edu/6047
-   Fall 2020 slides and materials: http://stellar.mit.edu/S/course/6/fa2...
+   [Latest slides and course today](http://stellar.mit.edu/S/course/6/fa20/6.047)
+   [Fall 2020 slides and materials](http://stellar.mit.edu/S/course/6/fa20/6.047/materials.html)
 
 3.  机器学习
 
    Machine Learning in Genomics: Dissecting the circuitry of Human Disease 
 
-   Full playlist with all videos in order is here: https://www.youtube.com/playlist?list...
+   [Full playlist with all videos in order is here](https://www.youtube.com/playlist?list=PLypiXJdtIca6U5uQOCHjP9Op3gpa177fK)
 
-   All slides from Fall 2019 are here: https://stellar.mit.edu/S/course/6/fa...
+   [All slides from Fall 2019 are here](https://stellar.mit.edu/S/course/6/fa19/6.047/materials.html)
 
-   Course website for latest materials is here: http://compbio.mit.edu/6.047
+   [Course website for latest materials is here](http://stellar.mit.edu/S/course/6/fa20/6.047/)
 
 4.  深度学习
 
    6.874/6.802/20.390/20.490/HST.506 Spring 2021 Prof. Manolis Kellis
    Deep Learning in the Life Sciences / Computational Systems Biology
-   Playlist: https://youtube.com/playlist?list=PLy...
-   Latest slides and course today: http://compbio.mit.edu/6874
-   Spring 2021 slides and materials: http://mit6874.github.io/
+   [Playlist](https://youtube.com/playlist?list=PLypiXJdtIca5sxV7aE3-PS9fYX3vUdIOX)
+   [Latest slides and course today](https://mit6874.github.io/)
+   [Spring 2021 slides and materials](https://canvas.mit.edu/courses/7499)
 
 ### Edx
 
