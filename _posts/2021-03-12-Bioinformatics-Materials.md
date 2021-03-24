@@ -7,7 +7,7 @@ author:     "Ruby"
 header-img: "/img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
 catalog: true
 tags:
-    - labs
+    - 生信
 ---
 
 ![bioinformatics](/D:/mypage/brainfo.github.io/_posts/img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
