@@ -21,7 +21,7 @@ tags:
 
 **方案的数学表述**：
 
-$$v_1\in argmax\limits_{||u||=1} u^{T}Su$$
+$$v_1\in \operatorname{argmax}\limits_{||u||=1} u^{T}Su$$
 
 ...
 
