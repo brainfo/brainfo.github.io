@@ -1,6 +1,6 @@
 layout:     post
 title:      "Bioinformatic Terms"
-subtitle:    \"meaning literally "around" the gene\"
+subtitle:    \"meaning literally \"around\" the gene\"
 date:       2021-04-19
 author:     "Ruby"
 header-img: "/img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
@@ -19,7 +19,7 @@ tags:
 
   or
 
-  {\displaystyle P=10^{\frac {-Q}{10}}}![P=10^{{{\frac  {-Q}{10}}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/1a30ecef1f2739d87f5451d0a748d257e48a4bef)
+  {\displaystyle P=10^{\frac{-Q}{10}}}![P=10^{{{\frac{-Q}{10}}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/1a30ecef1f2739d87f5451d0a748d257e48a4bef)
 
 - Mappability is related to the uniqueness of the k-mers at a particular position the genome. Low-complexity and repetitive regions have low uniqueness, which means low mappability.
 ## single cell
