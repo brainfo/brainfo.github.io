@@ -13,13 +13,13 @@ tags:
 
 ## sequencing
 
-- Phred quality scores {\displaystyle Q}![Q](https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed) are defined as a property which is logarithmically related to the base-calling error probabilities {\displaystyle P}![P](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a).[[2\]](https://en.wikipedia.org/wiki/Phred_quality_score#cite_note-phred-score-2)
+- Phred quality scores![Q](https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed) are defined as a property which is logarithmically related to the base-calling error probabilities ![P](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a).(https://en.wikipedia.org/wiki/Phred_quality_score#cite_note-phred-score-2)
 
-  {\displaystyle Q=-10\ \log _{10}P}![Q=-10\ \log _{{10}}P](https://wikimedia.org/api/rest_v1/media/math/render/svg/4bf1e60a0c90edd9ec883d812daef63fc4386d18)
+  ![Qeq](https://wikimedia.org/api/rest_v1/media/math/render/svg/4bf1e60a0c90edd9ec883d812daef63fc4386d18)
 
   or
 
-  ![P=10^{{\frac{-Q}{10}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/1a30ecef1f2739d87f5451d0a748d257e48a4bef)
+  ![eq](https://wikimedia.org/api/rest_v1/media/math/render/svg/1a30ecef1f2739d87f5451d0a748d257e48a4bef)
 
 - Mappability is related to the uniqueness of the k-mers at a particular position the genome. Low-complexity and repetitive regions have low uniqueness, which means low mappability.
 ## single cell
