@@ -7,8 +7,9 @@ author:     "Ruby"
 header-img: "/img/in-post/post-rstudio-server/rsp.png"
 catalog: true
 tags: 
-	- 生信
+    - 生信
 ---
+
 
 ## biuld R from source
 
