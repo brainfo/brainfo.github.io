@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      "Rstudio Server"
 subtitle:    "\"Cloud computing is a great euphemism for centralization of computer services under one server.\""
@@ -7,7 +8,7 @@ header-img: "/img/in-post/post-rstudio-server/rsp.png"
 catalog: true
 tags: 
 	- 生信
-
+---
 
 ## biuld R from source
 
