@@ -34,7 +34,7 @@ tags:
 
   想好你想用来放包的文件夹，并（创建或编辑）`~/.Renviron`文件，在其中加入：
 
-  ` R_LIBS_SITE= %your path`
+  `R_LIBS_SITE= %your path`
 
   
 
