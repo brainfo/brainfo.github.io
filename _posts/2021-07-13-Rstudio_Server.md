@@ -1,6 +1,6 @@
 layout:     post
 title:      "Rstudio Server"
-subtitle:    \"Cloud computing is a great euphemism for centralization of computer services under one server.\"
+subtitle:    "\"Cloud computing is a great euphemism for centralization of computer services under one server.\""
 date:       2021-07-13
 author:     "Ruby"
 header-img: "/img/in-post/post-rstudio-server/rsp.png"
