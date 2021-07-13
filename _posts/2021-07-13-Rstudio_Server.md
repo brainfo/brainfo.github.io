@@ -1,11 +1,11 @@
-layout:     post
-title:      "Rstudio Server"
-subtitle:    \"meaning literally "around" the gene\"
-date:       2021-07-13
-author:     "Ruby"
-header-img: "/img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
-catalog: true
-tags: bioinformatics
+- layout:     post
+- title:      "Rstudio Server"
+- subtitle:    \"Cloud computing is a great euphemism for centralization of computer services under one server.\"
+- date:       2021-07-13
+- author:     "Ruby"
+- header-img: "/img/in-post/post-rstudio-server/rsp.png"
+- catalog: true
+- tags: bioinformatics
 
 ## biuld R from source
 
