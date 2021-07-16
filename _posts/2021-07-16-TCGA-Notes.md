@@ -12,7 +12,7 @@ tags:
 
 - 官网现成的生存曲线只针对特定的突变
 - 下载病例的json文件中只有Case ID， 对应于下载数据时需要的Sample ID，需要匹配一下：
-	`{r} 
+	```{r} 
 	library(jsonlite)
 	library(TCGAbiolinks)
 	
@@ -21,4 +21,4 @@ tags:
 	sample <- getResults(query, cols=c("cases"))
 	case_pattern <- paste(case_id, collapse="|")
 	case_sample <- sample[grepl(case_pattern), sample]
-	`
+	```
