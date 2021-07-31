@@ -59,6 +59,12 @@ tags:
   [Latest slides and course today](https://mit6874.github.io/)  
 
   [Spring 2021 slides and materials](https://canvas.mit.edu/courses/7499)  
+  
+  ### Yale
+  - 机器学习与单细胞
+  **专业表达、专业思维、专业技能**
+  【详】[课程主页（课程+excercise）](https://www.krishnaswamylab.org/workshop)
+  [Playlist](https://www.youtube.com/watch?v=RS5xoGE2yZ4)
 
 ### Edx
 
