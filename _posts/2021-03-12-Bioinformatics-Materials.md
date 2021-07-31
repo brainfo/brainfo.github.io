@@ -10,7 +10,7 @@ tags:
     - 生信
 ---
 
-![bioinformatics](/D:/mypage/brainfo.github.io/_posts/img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
+![bioinformatics](img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
 
 ## Online courses
 
@@ -48,7 +48,7 @@ tags:
   
   
 
--  深度学习
+- 深度学习
 
   6.874/6.802/20.390/20.490/HST.506 Spring 2021 Prof. Manolis Kellis 
 
@@ -59,12 +59,17 @@ tags:
   [Latest slides and course today](https://mit6874.github.io/)  
 
   [Spring 2021 slides and materials](https://canvas.mit.edu/courses/7499)  
-  
-  ### Yale
-  - 机器学习与单细胞
+
+
+### Yale
+
+- 机器学习与单细胞
   **专业表达、专业思维、专业技能**
-  【详】[课程主页（课程+excercise）](https://www.krishnaswamylab.org/workshop)
-  [Playlist](https://www.youtube.com/watch?v=RS5xoGE2yZ4)
+
+  - 【详】[课程主页（课程+excercise）](https://www.krishnaswamylab.org/workshop)
+  - [Playlist](https://www.youtube.com/watch?v=RS5xoGE2yZ4)
+
+  
 
 ### Edx
 
