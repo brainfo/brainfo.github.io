@@ -85,6 +85,7 @@ tags:
 ## Others
 
 - [谷歌python风格指南](https://google.github.io/styleguide/pyguide.html)
+- [谷歌R风格指南](https://google.github.io/styleguide/Rguide.html)
 - 善用github, stackoverflow, google
 - 善用git， jupyter lab和vs code
 
