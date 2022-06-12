@@ -25,13 +25,13 @@ tags:
   Instructor: Philippe Rigollet
   
 
--  computational biology
+- computational biology
+  
+  6.047/6.878/HST.507 Fall 2020 Prof. Manolis Kellis
 
-  6.047/6.878/HST.507 Fall 2020 Prof. Manolis Kellis 
+  Computational Biology: Genomes, Networks, Evolution, Health
 
-  Computational Biology: Genomes, Networks, Evolution, Health 
-
-  [Latest slides and course today ](http://stellar.mit.edu/S/course/6/fa20/6.047)  
+  [Latest slides and course today ](http://stellar.mit.edu/S/course/6/fa20/6.047)
 
   [Fall 2020 slides and materials](http://stellar.mit.edu/S/course/6/fa20/6.047/materials.html) 
 
@@ -89,4 +89,7 @@ tags:
 - Use github, stackoverflow, google
 - Use git， jupyter lab, and vs code
   - in jupyter lab, use command+shift+a to reformat r codes
+  
+## Recommended from Medbioinfo course
+  Now you need to have a student account in the Applied bioinformatics course to get access to this page: https://canvas.instructure.com/courses/4439268/pages/the-ultimate-encyclopedia-of-helpful-web-resources?module_item_id=67241073
 
