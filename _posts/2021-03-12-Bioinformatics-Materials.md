@@ -7,7 +7,7 @@ author:     "Ruby"
 header-img: "/img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
 catalog: true
 tags:
-    - 生信
+    - bioinformatics
 ---
 
 ![bioinformatics](img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
@@ -16,17 +16,16 @@ tags:
 
 ### MIT open courseware
 
-- 统计
+- statistics
 
   MIT 18.650 Statistics for Applications, Fall 2016 
 
   [View the complete course](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/)  
 
   Instructor: Philippe Rigollet
-
   
 
--  计算生物学
+-  computational biology
 
   6.047/6.878/HST.507 Fall 2020 Prof. Manolis Kellis 
 
@@ -36,7 +35,8 @@ tags:
 
   [Fall 2020 slides and materials](http://stellar.mit.edu/S/course/6/fa20/6.047/materials.html) 
 
-- 机器学习
+
+- machine learning
 
   Machine Learning in Genomics: Dissecting the circuitry of Human Disease  
 
@@ -48,7 +48,7 @@ tags:
   
   
 
-- 深度学习
+- deep learning
 
   6.874/6.802/20.390/20.490/HST.506 Spring 2021 Prof. Manolis Kellis 
 
@@ -63,29 +63,30 @@ tags:
 
 ### Yale
 
-- 机器学习与单细胞
-  **专业表达、专业思维、专业技能**
+- machine learning and single cell
+  **professional expression、way of thinking、skills**
 
-  - 【详】[课程主页（课程+excercise）](https://www.krishnaswamylab.org/workshop)
+  - [details] [course main page（course+excercise）](https://www.krishnaswamylab.org/workshop)
   - [Playlist](https://www.youtube.com/watch?v=RS5xoGE2yZ4)
 
   
 
 ### Edx
 
-- 生信与R 
+- bioinformatics and R 
 
   [Data Analysis for Life Science](https://courses.edx.org/dashboard/programs/e15999cc-51c8-4be0-a482-9d67b4626250/)
 
 ## Books
 
-- 数据科学-理论、方法与R语言实践 
-- 复杂数据的统计方法
+- Practical data science with R
+- Bioinformatics data skills
 
 ## Others
 
-- [谷歌python风格指南](https://google.github.io/styleguide/pyguide.html)
-- [谷歌R风格指南](https://google.github.io/styleguide/Rguide.html)
-- 善用github, stackoverflow, google
-- 善用git， jupyter lab和vs code
+- [Google python style guide](https://google.github.io/styleguide/pyguide.html)
+- [Google R style guid](https://google.github.io/styleguide/Rguide.html)
+- Use github, stackoverflow, google
+- Use git， jupyter lab, and vs code
+  - in jupyter lab, use command+shift+a to reformat r codes
 
