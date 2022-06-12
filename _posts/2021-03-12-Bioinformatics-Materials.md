@@ -89,7 +89,6 @@ tags:
 - Use github, stackoverflow, google
 - Use git， jupyter lab, and vs code
   - in jupyter lab, use command+shift+a to reformat r codes
-  
-## Recommended from Medbioinfo course
-  Now you need to have a student account in the Applied bioinformatics course to get access to this page: https://canvas.instructure.com/courses/4439268/pages/the-ultimate-encyclopedia-of-helpful-web-resources?module_item_id=67241073
+- Recommended from Medbioinfo course
+  - Now you need to have a student account in the Applied bioinformatics course to get access to this page: https://canvas.instructure.com/courses/4439268/pages/the-ultimate-encyclopedia-of-helpful-web-resources?module_item_id=67241073
 
