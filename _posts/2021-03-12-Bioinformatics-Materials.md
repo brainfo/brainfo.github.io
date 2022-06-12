@@ -81,6 +81,7 @@ tags:
 
 - Practical data science with R
 - Bioinformatics data skills
+- 复杂数据统计方法——基于r的应用
 
 ## Others
 
