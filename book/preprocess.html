@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Preprocess | Benchmark snRNA-seq data analysis methods</title>
+  <title>Chapter 2 Preprocess | snRNA-seq data analysis</title>
   <meta name="description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Preprocess | Benchmark snRNA-seq data analysis methods" />
+  <meta property="og:title" content="Chapter 2 Preprocess | snRNA-seq data analysis" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Preprocess | Benchmark snRNA-seq data analysis methods" />
+  <meta name="twitter:title" content="Chapter 2 Preprocess | snRNA-seq data analysis" />
   
   <meta name="twitter:description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
   
@@ -76,7 +76,7 @@
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comments-on-snrna-seq-vs-scrna-seq"><i class="fa fa-check"></i><b>1.1</b> Comments on snRNA-seq vs scRNA-seq</a></li>
 </ul></li>
@@ -100,7 +100,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Benchmark snRNA-seq data analysis methods</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">snRNA-seq data analysis</a>
           </h1>
         </div>
 
@@ -131,8 +131,9 @@ The model schema and network representation can be found in <a href="https://www
 This method has been benchmarked with UMI counts thresholding and DecontX but not DropletUtils
 ## Ambient contamination</p>
 <p>I tested the combinations of the aforementioned empty droplets and ambient RNA detection methods (See diagram) with our in-house data and I’m convinced that Cellbender and cluster-based methods are of advantage.</p>
-<div id="htmlwidget-2c350422fa4899b59259" style="width:672px;height:100px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2c350422fa4899b59259">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"Cellbender\"]\n  b [label = \"emptyDrops\"]\n  c [label = \"controlAmbience\"]\n  d [label = \"cluster with empty drops\"]\n  \n  a -> c\n  a -> d\n  b -> c\n  b -> d\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p>In snRNA-seq, mtRNAs are natural controllers for ambient RNAs and thus can be leveraged in benchmarking.</p>
+<div id="htmlwidget-e5fb9780ab989bffc91f" style="width:672px;height:100px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e5fb9780ab989bffc91f">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"Cellbender\"]\n  b [label = \"emptyDrops\"]\n  c [label = \"controlAmbience\"]\n  d [label = \"cluster with empty drops\"]\n  \n  a -> c\n  a -> d\n  b -> c\n  b -> d\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 </div>
 </div>
