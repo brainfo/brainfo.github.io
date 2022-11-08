@@ -128,12 +128,16 @@
 <h2><span class="header-section-number">1.1</span> Comments on snRNA-seq vs scRNA-seq<a href="index.html#comments-on-snrna-seq-vs-scrna-seq" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>advantages of snRNA-seq</strong>: does not require the preservation of cellular integrity during sample preparation, especially dissociation.</p>
 <p><strong>disadvantages of snRNA-seq</strong>: loss of biological signal for genes with little nuclear localization.</p>
-<p><strong>Interpretation of DE results</strong>:<br />
-1.assumption: nuclear abundances are a good proxy for the overall expression profile.
-2.considerations:
-+ transcripts for strongly expressed genes might localize to the cytoplasm for efficient translation and subsequently be lost upon stripping.
-+ genes with the same overall expression but differences in <strong>the rate of nuclear export</strong> may appear to be differentially expressed between clusters.
-+ In the most pathological case, higher snRNA-seq abundances may indicate <strong>nuclear sequestration</strong> of transcripts for protein-coding genes and reduced activity of the relevant biological process, <strong>contrary to</strong> the usual interpretation of the effect of upregulation.</p>
+<p><strong>Interpretation of DE results</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>assumption: nuclear abundances are a good proxy for the overall expression profile.</li>
+<li>considerations:
+<ul>
+<li>transcripts for strongly expressed genes might localize to the cytoplasm for efficient translation and subsequently be lost upon stripping.</li>
+<li>genes with the same overall expression but differences in <strong>the rate of nuclear export</strong> may appear to be differentially expressed between clusters.</li>
+<li>In the most pathological case, higher snRNA-seq abundances may indicate <strong>nuclear sequestration</strong> of transcripts for protein-coding genes and reduced activity of the relevant biological process, <strong>contrary to</strong> the usual interpretation of the effect of upregulation.</li>
+</ul></li>
+</ol>
 <!-- ## Usage  -->
 <!-- Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading. -->
 <!-- Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`. -->
