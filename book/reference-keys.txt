@@ -2,5 +2,8 @@ preface
 comments-on-snrna-seq-vs-scrna-seq
 preprocess
 empty-droplets
-dropletutils
-cellbender
+statistical-modeling
+deep-learning
+do-dropletutils-and-cellbender-work-better
+do-simple-thresholds-work-good
+ambient-contamination

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Preprocess | snRNA-seq data analysis</title>
   <meta name="description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Preprocess | snRNA-seq data analysis" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Hong Jiang" />
 
 
-<meta name="date" content="2022-11-08" />
+<meta name="date" content="2022-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -84,9 +84,12 @@
 <ul>
 <li class="chapter" data-level="2.1" data-path="preprocess.html"><a href="preprocess.html#empty-droplets"><i class="fa fa-check"></i><b>2.1</b> Empty droplets</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="preprocess.html"><a href="preprocess.html#dropletutils"><i class="fa fa-check"></i><b>2.1.1</b> DropletUtils</a></li>
-<li class="chapter" data-level="2.1.2" data-path="preprocess.html"><a href="preprocess.html#cellbender"><i class="fa fa-check"></i><b>2.1.2</b> Cellbender</a></li>
+<li class="chapter" data-level="2.1.1" data-path="preprocess.html"><a href="preprocess.html#statistical-modeling"><i class="fa fa-check"></i><b>2.1.1</b> Statistical Modeling</a></li>
+<li class="chapter" data-level="2.1.2" data-path="preprocess.html"><a href="preprocess.html#deep-learning"><i class="fa fa-check"></i><b>2.1.2</b> Deep Learning</a></li>
+<li class="chapter" data-level="2.1.3" data-path="preprocess.html"><a href="preprocess.html#do-dropletutils-and-cellbender-work-better"><i class="fa fa-check"></i><b>2.1.3</b> Do DropletUtils and Cellbender work better?</a></li>
+<li class="chapter" data-level="2.1.4" data-path="preprocess.html"><a href="preprocess.html#do-simple-thresholds-work-good"><i class="fa fa-check"></i><b>2.1.4</b> Do simple thresholds work good?</a></li>
 </ul></li>
+<li class="chapter" data-level="2.2" data-path="preprocess.html"><a href="preprocess.html#ambient-contamination"><i class="fa fa-check"></i><b>2.2</b> Ambient contamination</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -111,31 +114,47 @@
 <div id="preprocess" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Preprocess<a href="preprocess.html#preprocess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In this chapter, we deal with empty droplets, ambient RNAs and doublets, especially in snRNA-seq setting.</p>
+<div id="htmlwidget-1a1e36e1cc329c87a365" style="width:672px;height:100px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1a1e36e1cc329c87a365">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"Cellbender\"]\n  b [label = \"emptyDrops\"]\n  c [label = \"controlAmbience\"]\n  d [label = \"enriched in empty drops\"]\n  \n  a -> c\n  a -> d\n  b -> c\n  b -> d\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <div id="empty-droplets" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Empty droplets<a href="preprocess.html#empty-droplets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We have no prior knowledge about whether a particular library (i.e., cell barcode) corresponds to cell-containing or empty droplets. Thus, we need to call cells from empty droplets based on the observed expression profiles. This is not entirely straightforward as empty droplets can contain ambient (i.e., extracellular) RNA that can be captured and sequenced, resulting in non-zero counts for libraries that do not contain any cell.
-The aim of empty droplets detection in most cases is to retains nucleus that would have been discarded by other threshold on total counts.</p>
-<div id="dropletutils" class="section level3 hasAnchor" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> DropletUtils<a href="preprocess.html#dropletutils" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://bioconductor.org/packages/release/bioc/html/DropletUtils.html">DropletUtils</a> implemented utils to <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y">distinguish empty droplets</a> and <a href="https://www.nature.com/articles/s41467-018-05083-x">barcode swapping</a>. Here we focused on empty droplet detection:
-0. filter out genes with counts of zero for all barcodes
-1. estimate the profile of the ambient RNA pool (default as gene count across barcodes with total counts &lt; 100)
-2. test each barcode for deviations from this profile using a Dirichlet-multinomial model of UMI count sampling
-2.1 Barcodes with significant deviations are considered to be genuine cells
-2.2 Use a knee point filter to ensure that barcodes with large total counts are always retained</p>
+The aim of empty droplets detection in most cases is to retains nucleus that would have been discarded by other threshold on total counts. Therefore, could use looser thresholds after this step.</p>
+<div id="statistical-modeling" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Statistical Modeling<a href="preprocess.html#statistical-modeling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cell Ranger v3.0 and <a href="https://bioconductor.org/packages/release/bioc/html/DropletUtils.html">DropletUtils</a> implemented utils to <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y">distinguish empty droplets</a>. The algorithm has three key steps:</p>
+<ol style="list-style-type: decimal">
+<li>filter out genes with counts of zero for all barcodes</li>
+<li>estimate the profile of the ambient RNA pool (as gene count across barcodes with total counts &lt; 100 in DropletUtils or estimate expected number of recovered cells by OrdMag alg. in Cellranger)</li>
+<li>test each barcode for deviations from this profile using a Dirichlet-multinomial model of UMI count sampling
+<ul>
+<li>Barcodes with significant deviations are considered to be genuine cells</li>
+<li>Use a knee point filter to ensure that barcodes with large total counts are always retained</li>
+</ul></li>
+</ol>
+<p>Actually the CellRanger and DropletUtils give much different resulted cells after this step. And the reason may just lie in the second step.</p>
 </div>
-<div id="cellbender" class="section level3 hasAnchor" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Cellbender<a href="preprocess.html#cellbender" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://cellbender.readthedocs.io/en/latest/">Cellbender</a> provides a deep generative model of background-contaminated counts. The model is used for learning the background RNA profile, distinguishing cell-containing droplets from empty ones, and retrieving background-free gene expression profiles.
-The model schema and network representation can be found in <a href="https://www.biorxiv.org/content/10.1101/791699v2.full.pdf">Figure 1g,h</a>
-This method has been benchmarked with UMI counts thresholding and DecontX but not DropletUtils
-## Ambient contamination</p>
+<div id="deep-learning" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Deep Learning<a href="preprocess.html#deep-learning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://cellbender.readthedocs.io/en/latest/">Cellbender</a> provides a deep generative model of background-contaminated counts. The model is used for learning the background RNA profile, distinguishing cell-containing droplets from empty ones, and retrieving background-free gene expression profiles.<br />
+The model schema and network representation can be found in <a href="https://www.biorxiv.org/content/10.1101/791699v2.full.pdf">Figure 1g,h</a><br />
+This method has been benchmarked with UMI counts thresholding and DecontX but not DropletUtils</p>
+</div>
+<div id="do-dropletutils-and-cellbender-work-better" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Do DropletUtils and Cellbender work better?<a href="preprocess.html#do-dropletutils-and-cellbender-work-better" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>NO</strong>
+I summarized the general stats from the above mentioned methods with three in-house 10x snRNA-seq data:</p>
+</div>
+<div id="do-simple-thresholds-work-good" class="section level3 hasAnchor" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> Do simple thresholds work good?<a href="preprocess.html#do-simple-thresholds-work-good" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>YES</strong></p>
+</div>
+</div>
+<div id="ambient-contamination" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Ambient contamination<a href="preprocess.html#ambient-contamination" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>I tested the combinations of the aforementioned empty droplets and ambient RNA detection methods (See diagram) with our in-house data and I’m convinced that Cellbender and cluster-based methods are of advantage.</p>
 <p>In snRNA-seq, mtRNAs are natural controllers for ambient RNAs and thus can be leveraged in benchmarking.</p>
-<div id="htmlwidget-4c9227601561cfd00985" style="width:672px;height:100px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4c9227601561cfd00985">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"Cellbender\"]\n  b [label = \"emptyDrops\"]\n  c [label = \"controlAmbience\"]\n  d [label = \"cluster with empty drops\"]\n  \n  a -> c\n  a -> d\n  b -> c\n  b -> d\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
-</div>
 </div>
 </div>
             </section>
