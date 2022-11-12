@@ -4,6 +4,5 @@ preprocess
 empty-droplets
 statistical-modeling
 deep-learning
-do-dropletutils-and-cellbender-work-better
-do-simple-thresholds-work-good
+could-cellbender-retain-more-good-nucleus
 ambient-contamination

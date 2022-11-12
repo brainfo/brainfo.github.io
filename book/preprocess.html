@@ -23,7 +23,7 @@
 <meta name="author" content="Hong Jiang" />
 
 
-<meta name="date" content="2022-11-10" />
+<meta name="date" content="2022-11-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -86,8 +86,7 @@
 <ul>
 <li class="chapter" data-level="2.1.1" data-path="preprocess.html"><a href="preprocess.html#statistical-modeling"><i class="fa fa-check"></i><b>2.1.1</b> Statistical Modeling</a></li>
 <li class="chapter" data-level="2.1.2" data-path="preprocess.html"><a href="preprocess.html#deep-learning"><i class="fa fa-check"></i><b>2.1.2</b> Deep Learning</a></li>
-<li class="chapter" data-level="2.1.3" data-path="preprocess.html"><a href="preprocess.html#do-dropletutils-and-cellbender-work-better"><i class="fa fa-check"></i><b>2.1.3</b> Do DropletUtils and Cellbender work better?</a></li>
-<li class="chapter" data-level="2.1.4" data-path="preprocess.html"><a href="preprocess.html#do-simple-thresholds-work-good"><i class="fa fa-check"></i><b>2.1.4</b> Do simple thresholds work good?</a></li>
+<li class="chapter" data-level="2.1.3" data-path="preprocess.html"><a href="preprocess.html#could-cellbender-retain-more-good-nucleus"><i class="fa fa-check"></i><b>2.1.3</b> Could Cellbender retain more good nucleus?</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="preprocess.html"><a href="preprocess.html#ambient-contamination"><i class="fa fa-check"></i><b>2.2</b> Ambient contamination</a></li>
 </ul></li>
@@ -114,8 +113,8 @@
 <div id="preprocess" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Preprocess<a href="preprocess.html#preprocess" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>In this chapter, we deal with empty droplets, ambient RNAs and doublets, especially in snRNA-seq setting.</p>
-<div id="htmlwidget-1a1e36e1cc329c87a365" style="width:672px;height:100px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1a1e36e1cc329c87a365">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"Cellbender\"]\n  b [label = \"emptyDrops\"]\n  c [label = \"controlAmbience\"]\n  d [label = \"enriched in empty drops\"]\n  \n  a -> c\n  a -> d\n  b -> c\n  b -> d\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3fa386d570d77d9ad86b" style="width:672px;height:100px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3fa386d570d77d9ad86b">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"Cellbender\"]\n  b [label = \"emptyDrops\"]\n  c [label = \"controlAmbience\"]\n  d [label = \"enriched in empty drops\"]\n  \n  a -> c\n  a -> d\n  b -> c\n  b -> d\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <div id="empty-droplets" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Empty droplets<a href="preprocess.html#empty-droplets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We have no prior knowledge about whether a particular library (i.e., cell barcode) corresponds to cell-containing or empty droplets. Thus, we need to call cells from empty droplets based on the observed expression profiles. This is not entirely straightforward as empty droplets can contain ambient (i.e., extracellular) RNA that can be captured and sequenced, resulting in non-zero counts for libraries that do not contain any cell.
@@ -132,22 +131,27 @@ The aim of empty droplets detection in most cases is to retains nucleus that wou
 <li>Use a knee point filter to ensure that barcodes with large total counts are always retained</li>
 </ul></li>
 </ol>
-<p>Actually the CellRanger and DropletUtils give much different resulted cells after this step. And the reason may just lie in the second step.</p>
+<p>Cellranger uses an <code>expected-cells</code> and DropUtils uses <code>by.rank</code> as initial “cells”. But with the sample initial top number of cells, two implementations give slightly different retained cells. <em>And I don’t get why this happens.</em></p>
+<div class="infobox notes">
+<p>In cellranger 7.0, it estimates expected number of recovered cells by OrdMag alg. <span style="color: white;">But I didn’t get to use this method.</span><br />
+Cellranger doesn’t explicitly tell what FDR cutoff it uses. But retained number of nucleus fell into the range between 0.001 to 0.05 of DropUtils.<br />
+DropUtils uses barcodes with total counts &lt; 100 as initial empty drops, but this <strong>failed</strong> with the tested datasets, evident (e.g.) as in FDR distribution:</p>
+</div>
 </div>
 <div id="deep-learning" class="section level3 hasAnchor" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Deep Learning<a href="preprocess.html#deep-learning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://cellbender.readthedocs.io/en/latest/">Cellbender</a> provides a deep generative model of background-contaminated counts. The model is used for learning the background RNA profile, distinguishing cell-containing droplets from empty ones, and retrieving background-free gene expression profiles.<br />
 The model schema and network representation can be found in <a href="https://www.biorxiv.org/content/10.1101/791699v2.full.pdf">Figure 1g,h</a><br />
-This method has been benchmarked with UMI counts thresholding and DecontX but not DropletUtils</p>
+This method has been benchmarked with UMI counts threshold and DecontX but not DropletUtils</p>
 </div>
-<div id="do-dropletutils-and-cellbender-work-better" class="section level3 hasAnchor" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Do DropletUtils and Cellbender work better?<a href="preprocess.html#do-dropletutils-and-cellbender-work-better" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>NO</strong>
+<div id="could-cellbender-retain-more-good-nucleus" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Could Cellbender retain more good nucleus?<a href="preprocess.html#could-cellbender-retain-more-good-nucleus" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>YES</strong><br />
 I summarized the general stats from the above mentioned methods with three in-house 10x snRNA-seq data:</p>
+<div class="infobox notes">
+<p>Thresholds filtering is necessary and the most useful data clean method.<br />
+It doesn’t matter whether by detecting outliers or just setting hard cut-offs.</p>
 </div>
-<div id="do-simple-thresholds-work-good" class="section level3 hasAnchor" number="2.1.4">
-<h3><span class="header-section-number">2.1.4</span> Do simple thresholds work good?<a href="preprocess.html#do-simple-thresholds-work-good" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>YES</strong></p>
 </div>
 </div>
 <div id="ambient-contamination" class="section level2 hasAnchor" number="2.2">
