@@ -9,7 +9,7 @@ catalog: true
 tags:
     - bioinformatics
 ---
-[test](/_posts/img/in-post/post-databases/databases.jpg)
+![test](/_posts/img/in-post/post-databases/databases.jpg)
 ## Gene ontology and network
 1. [GeneMania](https://genemania.org/): for beautiful gene networks. Indexing 2830 association networks containing 60554667 interactions mapped to 166691 genes from 9 organisms.  
    ![Input *Ar* and Mouse as an example](/_posts/img/in-post/post-databases/GeneMania_example.png)  
