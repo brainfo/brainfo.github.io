@@ -4,13 +4,11 @@ title:      "Bioinformatics Materials"
 subtitle:   " \"Thank god, my genome just compiled.\""
 date:       2021-03-12
 author:     "Ruby"
-header-img: "/img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
+header-img: "img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
 catalog: true
 tags:
     - bioinformatics
 ---
-
-![bioinformatics](img/in-post/post-bioinformatics-materials/bioinformatics.jpg)
 
 ## Online courses
 
