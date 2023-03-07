@@ -7,7 +7,7 @@ author:     "Ruby"
 header-img: "/img/in-post/post-last-holiday/city.jpg"
 catalog: true
 tags:
-    - 生活
+    - life
 ---
 
 ## Applying for KU Leuven
