@@ -177,8 +177,8 @@
             ">
     			<!-- Language Selector -->
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="1"> English 英文</option>
-    <option value="0" selected> Chinese 中文</option>
+    <option value="0"> English 英文</option>
+    <option value="1" selected> Chinese 中文</option>
 </select>
 
 <!-- Chinese Version -->
@@ -498,9 +498,9 @@
     // handle select change
     function onLanChange(index){
         if(index == 0){
-            _hash = "#zh"
-        }else{
             _hash = "#en"
+        }else{
+            _hash = "#zh"
         }
         _render(_hash)
     }
