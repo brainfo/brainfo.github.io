@@ -4,7 +4,7 @@ title:      "Bioinformatics Databases"
 subtitle:   " \"Information is not knowledge, and knowledge is not wisdom.\""
 date:       2023-03-05
 author:     "Ruby"
-header-img: "/img/in-post/post-databases/databases.jpg"
+header-img: "/img/in-post/post-databases/databases.png"
 catalog: true
 tags:
     - bioinformatics
