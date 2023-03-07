@@ -269,8 +269,8 @@
 <!-- Handle Language Change -->
 <script type="text/javascript">
     // get nodes
-    var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
+    var $zh = document.querySelector(".zh");
     var $select = document.querySelector("select");
 
     // bind hashchange event
@@ -282,20 +282,20 @@
     function _render(_hash){
         var _hash = _hash || window.location.hash;
         // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
+        if(_hash == "#zh"){
             $select.selectedIndex = 0;
             $zh.style.display = "block";
             $zh.classList.add("active");
             $en.style.display = "none";
             $en.classList.remove("active");
+        // en by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $zh.style.display = "none";
+            $zh.classList.remove("active");
         }
         // interop with catalog 
         if ("{{ page.catalog }}") generateCatalog(".catalog-body");
@@ -304,9 +304,9 @@
     // handle select change
     function onLanChange(index){
         if(index == 0){
-            _hash = "#zh"
-        }else{
             _hash = "#en"
+        }else{
+            _hash = "#zh"
         }
         _render(_hash)
     }
