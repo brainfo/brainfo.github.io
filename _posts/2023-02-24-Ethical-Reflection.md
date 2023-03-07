@@ -8,7 +8,7 @@ header-img: "/img/in-post/post-ethics-reflection/ethics.png"
 catalog: true
 tags:
     - research 
-    - ethical
+    - ethics
 ---
 # Reflections on Research Ethics
 
