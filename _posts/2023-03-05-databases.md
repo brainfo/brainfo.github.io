@@ -4,19 +4,19 @@ title:      "Bioinformatics Databases"
 subtitle:   " \"Information is not knowledge, and knowledge is not wisdom.\""
 date:       2023-03-05
 author:     "Ruby"
-header-img: "/img/in-post/post-databases/databases.png"
+header-img: "img/in-post/post-databases/databases.jpg"
 catalog: true
 tags:
     - bioinformatics
 ---
 ## Gene ontology and network
 1. [GeneMania](https://genemania.org/): for beautiful gene networks. Indexing 2830 association networks containing 60554667 interactions mapped to 166691 genes from 9 organisms.  
-   ![ar mouse](/img/in-post/post-databases/GeneMania_example.png "Input *Ar* and Mouse as an example")  
+   ![ar mouse](img/in-post/post-databases/GeneMania_example.png "Input *Ar* and Mouse as an example")  
    [Usage case in peer reviewed paper](https://www.pnas.org/doi/abs/10.1073/pnas.1722617115?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed)
 2. [Pathway Commons](http://www.pathwaycommons.org/)  
-   ![ar pathway](/img/in-post/post-databases/AndrogenReceptor.png "Androgen receptor")
+   ![ar pathway](img/in-post/post-databases/AndrogenReceptor.png "Androgen receptor")
 3. [Human transduct signaling pathways](http://netpath.org/pathways?path_id=NetPath_2)  
-   ![ar tranduction](/img/in-post/post-databases/NetPath_example.png "Androgen receptor signaling pathway")
+   ![ar tranduction](img/in-post/post-databases/NetPath_example.png "Androgen receptor signaling pathway")
 4. [Mouse knowledgebase](https://www.informatics.jax.org/): Genes (ontology and signaling pathways), phenotypes & mutant alleles, Human-Mouse disease connection, gene expression, cre, strains & polymorphisms, homology, cancer models, ... 
 5. [Enrichr](https://maayanlab.cloud/Enrichr/)
    [Usage case in peer reviewed paper](https://www.cell.com/cell/pdf/S0092-8674(22)00070-8.pdf)
