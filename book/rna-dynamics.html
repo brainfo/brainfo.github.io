@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>snRNA-seq data analysis</title>
+  <title>Chapter 3 RNA dynamics | snRNA-seq data analysis</title>
   <meta name="description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="snRNA-seq data analysis" />
+  <meta property="og:title" content="Chapter 3 RNA dynamics | snRNA-seq data analysis" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
   <meta name="github-repo" content="https://github.com/brainfo/thesisBook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="snRNA-seq data analysis" />
+  <meta name="twitter:title" content="Chapter 3 RNA dynamics | snRNA-seq data analysis" />
   
   <meta name="twitter:description" content="This is a minimal benchmark for analyzing snRNA-seq data." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="preprocess.html"/>
 
-<link rel="next" href="preprocess.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -111,64 +111,20 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">snRNA-seq data analysis</h1>
-<p class="author"><em>Hong Jiang</em></p>
-<p class="date"><em>2023-04-18</em></p>
-</div>
-<div id="preface" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This is a minimal <strong>benchmark</strong> for analyzing snRNA-seq data, especially with scverse and bioconductor communities. It will be continuously updated throughout my PhD years.</p>
-<p>From my current experience:</p>
-<ul>
-<li>bioconductor has more solid basement of biological (annotation) data</li>
-<li>questions and methods to tackle them (except for dl) are usually first developed in R, then the python community would propose competing methods. Since seruat comes earlier than scanpy</li>
-<li>the scanpy community evolves fast but somehow the developers are not considering better integrating each other’s new features</li>
-<li>packages in R is in general easier to use, though I personally is more used to python and could adapt more myself</li>
-<li>R utils are too easily to crash with the same hardware facility, same data size and same kind of job</li>
-</ul>
-<div id="comments-on-snrna-seq-vs-scrna-seq" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Comments on snRNA-seq vs scRNA-seq<a href="index.html#comments-on-snrna-seq-vs-scrna-seq" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>advantages of snRNA-seq</strong>: does not require the preservation of cellular integrity during sample preparation, especially dissociation.</p>
-<p><strong>disadvantages of snRNA-seq</strong>: loss of biological signal for genes with little nuclear localization.</p>
-<p><strong>Interpretation of DE results</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>assumption: nuclear abundances are a good proxy for the overall expression profile.</li>
-<li>considerations:
-<ul>
-<li>transcripts for strongly expressed genes might localize to the cytoplasm for efficient translation and subsequently be lost upon stripping.</li>
-<li>genes with the same overall expression but differences in <strong>the rate of nuclear export</strong> may appear to be differentially expressed between clusters.</li>
-<li>In the most pathological case, higher snRNA-seq abundances may indicate <strong>nuclear sequestration</strong> of transcripts for protein-coding genes and reduced activity of the relevant biological process, <strong>contrary to</strong> the usual interpretation of the effect of upregulation.</li>
-</ul></li>
-</ol>
-<!-- ## Usage  -->
-<!-- Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading. -->
-<!-- Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`. -->
-<!-- The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book. -->
-<!-- ## Render book -->
-<!-- You can render the HTML version of this example book without changing anything: -->
-<!-- 1. Find the **Build** pane in the RStudio IDE, and -->
-<!-- 1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files. -->
-<!-- Or build the book from the R console: -->
-<!-- ```{r, eval=FALSE} -->
-<!-- bookdown::render_book() -->
-<!-- ``` -->
-<!-- To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>. -->
-<!-- ## Preview book -->
-<!-- As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console: -->
-<!-- ```{r eval=FALSE} -->
-<!-- bookdown::serve_book() -->
-<!-- ``` -->
+<div id="rna-dynamics" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> RNA dynamics<a href="rna-dynamics.html#rna-dynamics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In this chapter, we deal with RNA dynamics inside nucleus.</p>
+<div id="htmlwidget-ec93c47ac911295fbd70" style="width:672px;height:100px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ec93c47ac911295fbd70">{"x":{"diagram":"\n  digraph graph2 {\n  \n  graph [layout = dot, rankdir = LR]\n  \n  # node definitions with substituted label text\n  node [shape = oval]\n  a [label = \"dsDNA\"]\n  b [label = \"unspliced RNA\"]\n  c [label = \"spliced RNA\"]\n  d [label = \"plasma\"]\n  e [label = \"emptyset\"]\n  \n  a -> b [label = \"Transcription\"]\n  b -> c [label = \"Splicing\"]\n  c -> d [label = \"Export\"]\n  c -> e [label = \"Decay\"]\n  b-> d[label = \"Export\"]\n  b -> e[label = \"Decay\"]\n\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="preprocess.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="preprocess.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -199,7 +155,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/brainfo/brainfo.github.io/edit/master/index.Rmd",
+"link": "https://github.com/brainfo/brainfo.github.io/edit/master/02-RNAd.Rmd",
 "text": "Edit"
 },
 "history": {
