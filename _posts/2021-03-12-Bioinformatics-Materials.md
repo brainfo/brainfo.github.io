@@ -63,9 +63,10 @@ tags:
 ### Yale
 
 - machine learning and single cell
-  **professional expression、way of thinking、skills**
+  
+  **Highly recommend** with professional expression、way of thinking、practical exercises and skills
 
-  - [details] [course main page（course+excercise）](https://www.krishnaswamylab.org/workshop)
+  - details:[course main page（course+excercise）](https://www.krishnaswamylab.org/workshop)
   - [Playlist](https://www.youtube.com/watch?v=RS5xoGE2yZ4)
 
   
