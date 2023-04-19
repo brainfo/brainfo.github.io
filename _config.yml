@@ -7,7 +7,6 @@ description: "on Bioinfo Data Reading and Writing | Ruby，Bioinfomer on Brain s
 keyword: "life, bio, data, program, reading"
 url: "https://brainfo.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
 # Publish posts or collection documents with a future date.
 future: true
 
@@ -53,7 +52,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: sci-lavisher
+disqus_username: brainfo
 
 # Netease settings
 netease_comment: false
@@ -97,5 +96,7 @@ friends: [
     # },{
         title: "chaoli",
         href: "http://chaoli.club"
-    }
+    },
+    {title: "梁昊(Hao Liang)",
+    href: "http://www.lifesequence.co/"}
 ]
