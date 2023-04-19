@@ -1,4 +1,4 @@
----
+<!-- ---
 layout:     post
 title:      "What is inheritable element"
 date:       2023-04-18
@@ -9,7 +9,7 @@ disqus_username: brainfo
 tags:
     - inheritance
     - biology
----
+--- -->
 
 
 ## Discussion (dev ver)
