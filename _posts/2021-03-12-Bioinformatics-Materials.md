@@ -5,7 +5,7 @@ subtitle:   " \"Thank god, my genome just compiled.\""
 date:       2021-03-12
 author:     "Ruby"
 header-img: "img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
-disqus_username: Brainfo
+disqus_username: brainfo
 catalog: true
 tags:
     - bioinformatics
