@@ -5,6 +5,7 @@ subtitle:   " \"Information is not knowledge, and knowledge is not wisdom.\""
 date:       2023-03-05
 author:     "Ruby"
 header-img: "img/in-post/post-databases/databases.jpg"
+disqus_username: brainfo
 catalog: true
 tags:
     - bioinformatics

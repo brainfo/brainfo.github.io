@@ -5,6 +5,7 @@ date:       2023-04-18
 author:     "Ruby"
 catalog: true
 catalog_depth: 2
+disqus_username: brainfo
 tags:
     - inheritance
     - biology

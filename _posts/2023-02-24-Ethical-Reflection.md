@@ -5,6 +5,7 @@ subtitle:   " \"Ethics is the activity of man directed to secure the inner perfe
 date:       2023-02-24
 author:     "Ruby"
 header-img: "/img/in-post/post-ethics-reflection/ethics.png"
+disqus_username: brainfo
 catalog: true
 tags:
     - research 

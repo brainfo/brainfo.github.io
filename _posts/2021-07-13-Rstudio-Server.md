@@ -6,6 +6,7 @@ date:       2021-07-13
 author:     "Ruby"
 header-img: "/img/in-post/post-rstudio-server/rsp.png"
 catalog: true
+disqus_username: brainfo
 tags: 
     - 生信
 ---

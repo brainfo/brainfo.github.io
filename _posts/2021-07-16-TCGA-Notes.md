@@ -6,6 +6,7 @@ date:       2021-07-16
 author:     "Ruby"
 header-img: "/img/in-post/post-rtcga-notes/lung_cancer_EM.jpeg"
 catalog: true
+disqus_username: brainfo
 tags: 
     - 生信
 ---

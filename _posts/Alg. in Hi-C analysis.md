@@ -1,6 +1,22 @@
+---
+layout:     post
+title:      "Hi-C"
+# subtitle:   " \"Home is where love resides, memories are created, friends always belong, and laughter never ends.\""
+date:       2021-01-20
+author:     "Ruby"
+# header-img: "/img/in-post/post-last-holiday/city.jpg"
+disqus_username: brainfo
+catalog: true
+tags:
+    - bioinformatics
+    - Hi-C
+---
+
 # Hi-C analysis
+TBC
 
 ## Compartments
+TBC
 
 ### call compartments
 
@@ -94,8 +110,10 @@ The score is higher when clusters are dense and well separated, which relates to
 The Silhouette Coefficient is generally higher for convex clusters than other concepts of clusters, such as density based clusters like those obtained through DBSCAN.
 
 ## Sampling
+TBC
 
 ## Single cell tutorial
+TBC
 
 
 

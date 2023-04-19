@@ -5,6 +5,7 @@ subtitle:   " Abstracts collections by brainfo"
 date:       2023-04-13
 author:     "Ruby"
 # header-img: "img/in-post/post-SCGD/satijia.jpeg"
+disqus_username: brainfo
 catalog: true
 catalog_depth: 2
 tags:
