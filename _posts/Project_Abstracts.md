@@ -1,4 +1,4 @@
----
+<!-- ---
 layout:     post
 title:      "Project Abstracts"
 subtitle:   " Abstracts collections by brainfo"
@@ -10,7 +10,7 @@ catalog: true
 catalog_depth: 2
 tags:
     - thesis 
----
+--- -->
 
 The abstracts are modified by others since this is a collaborative work. Here is just a collections of first drafts.
 ## Revealing cell type-specific transcriptional signatures of the placenta in obesity and its role in fetal programming
