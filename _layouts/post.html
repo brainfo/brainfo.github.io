@@ -28,7 +28,7 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                {% if site.header_color %}
+                <!-- {% if site.header_color %}
                     <div class="tags">
                         {% for tag in page.tags %}
                         <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}" style="color: rgba(0,0,0)">{{ tag }} </a>
@@ -42,8 +42,8 @@ layout: default
                     <h2 class="subheading" style="color: rgba(0,0,0)">{{ page.subtitle }}</h2>
                     {% comment %} endif {% endcomment %}
                     <span class="meta" style="color: rgba(0,0,0)">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date
-                        | date: "%B %-d, %Y" }}</span>
-                {% else %}
+                        | date: "%B %-d, %Y" }}</span> -->
+                <!-- {% else %} -->
                     <div class="tags">
                         {% for tag in page.tags %}
                         <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }} </a>
@@ -59,7 +59,7 @@ layout: default
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title
                         }}{% endif %} on {{ page.date
                         | date: "%B %-d, %Y" }}</span>
-                {% endif %}
+                <!-- {% endif %} -->
                 </div>
             </div>
         </div>
