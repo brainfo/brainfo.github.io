@@ -1,3 +1,6 @@
+---
+multilingual: 'true'
+---
 # About Me
 
 ## Basic info
