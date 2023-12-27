@@ -1,8 +1,3 @@
----
-layout: page
-multilingual: 'true'
----
-
 > 没有热爱，没有特长，  
 > 希望自己能参与有用的事业。
 
