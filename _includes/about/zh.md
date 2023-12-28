@@ -7,4 +7,4 @@ Hey，我是ruby，一只晚熟的生物。您也可以在[twitter](https://twit
 
 参与的项目和发表的文章，👉 戳 [Portfolio](/portfolio)、[Researchgate](https://www.researchgate.net/profile/Hong-Jiang-53/research)。
 
-其实这里就是随便闲聊啦。虽然我常常写随笔，但是我再想想如何更清晰地分类各类作品吧。我就暂时不写英文版网页咯，或者将来想要练习其他语言再来吧！
+其实这里就是随便闲聊啦。虽然我常常写随笔，但是我再想想如何更清晰地分类各类作品吧。我就暂时不写英文版网页咯，或者将来想要练习其他语言再来吧
