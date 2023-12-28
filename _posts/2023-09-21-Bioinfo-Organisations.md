@@ -3,7 +3,7 @@ layout:     post
 title:      "Bioinfo organisations and seminars"
 date:       2023-09-21
 author:     "Ruby"
-header-img: "/img/in-post/post-bioinformatics-materials/bioinformatics.jpg"
+header-img: "img/in-post/post-bioinformatics-organisations/organisations.jpg"
 catalog: true
 disqus_username: brainfo
 tags:
