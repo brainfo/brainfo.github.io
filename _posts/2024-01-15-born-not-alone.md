@@ -4,7 +4,7 @@ title:      "You Were Not Born Alone"
 subtitle:   "Unraveling the Mysteries of the Prenatal Companion"
 date:       2024-01-15
 author:     "Ruby"
-# header-img: "img/start.jpeg"
+header-img: "img/in-post/post-born-not-alone/dv.png"
 disqus_username: brainfo
 catalog: true
 tags:
