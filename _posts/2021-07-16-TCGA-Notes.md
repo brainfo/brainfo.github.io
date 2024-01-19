@@ -8,7 +8,8 @@ header-img: "/img/in-post/post-rtcga-notes/lung_cancer_EM.jpeg"
 catalog: true
 disqus_username: brainfo
 tags: 
-    - 生信
+    - bioinformatics
+    - database
 ---
 
 ## 检索

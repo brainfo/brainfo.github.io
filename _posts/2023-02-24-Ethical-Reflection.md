@@ -8,7 +8,7 @@ header-img: "/img/in-post/post-ethics-reflection/ethics.png"
 disqus_username: brainfo
 catalog: true
 tags:
-    - research 
+    - thesis 
     - ethics
 ---
 # Reflections on Research Ethics

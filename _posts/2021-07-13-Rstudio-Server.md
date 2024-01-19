@@ -8,7 +8,8 @@ header-img: "/img/in-post/post-rstudio-server/rsp.png"
 catalog: true
 disqus_username: brainfo
 tags: 
-    - 生信
+    - bioinformatics
+    - server
 ---
 
 

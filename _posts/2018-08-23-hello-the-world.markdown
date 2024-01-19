@@ -8,7 +8,7 @@ header-img: "img/start.jpeg"
 disqus_username: brainfo
 catalog: true
 tags:
-    - 生活
+    - life
 ---
 
 > “Yeah It's on. ”

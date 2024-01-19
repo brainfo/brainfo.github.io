@@ -11,6 +11,7 @@ tags:
     - computing
     - python
     - hpc
+    - server
 ---
 ## Q & A
 1. is it recommended to use jupyter on bianca?

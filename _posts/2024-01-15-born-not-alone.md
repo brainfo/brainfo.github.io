@@ -8,7 +8,7 @@ header-img: "img/in-post/post-born-not-alone/dv.png"
 disqus_username: brainfo
 catalog: true
 tags:
-    - project
+    - thesis
     - popular science
 ---
 

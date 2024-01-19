@@ -9,6 +9,7 @@ disqus_username: brainfo
 catalog: true
 tags:
     - bioinformatics
+    - database
 ---
 ## Gene ontology and network
 1. IntAct
