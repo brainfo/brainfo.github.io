@@ -91,10 +91,6 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        title: "chaoli",
-        href: "http://chaoli.club"
-    },
     {title: "梁昊(Hao Liang)",
     href: "http://www.lifesequence.co/"}
 ]
