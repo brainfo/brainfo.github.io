@@ -24,6 +24,16 @@
                         </a>
                     </li>
                     {% endif %}
+                    {% if site.lofter_username %}
+                    <li>
+                        <a href="https://lofter.com/{{ site.lofter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse">Lofter(Literature creation & Fanfict)</i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
 
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     {% if site.zhihu_username %}
@@ -31,7 +41,7 @@
                         <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                <i class="fa  fa-stack-1x fa-inverse">知乎</i>
                             </span>
                         </a>
                     </li>

@@ -14,8 +14,9 @@ future: true
 #RSS: false
 #weibo_username:     huxpro
 #zhihu_username:     huxpro
-#github_username:    huxpro
-#twitter_username:   huxpro
+github_username:    brainfo
+twitter_username:   Ruby_Devinfo
+lofter_username:    scilavisher
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -91,9 +92,6 @@ service-worker: true
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
         title: "chaoli",
         href: "http://chaoli.club"
     },
