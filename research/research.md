@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Research
+title: Research Documents
 permalink: /research/
 ---
-
-**Catelog**
 
 * TOC
 {:toc}
@@ -16,6 +14,8 @@ Here you find the output of my production
 ## Undergrate thesis
 
 Mainly with the help of Jarning and BioStaCs Lab @USTC
+
+* <a href="pdfs/基于全基因组测序的线虫突变基因的筛选.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">基于全基因组测序的线虫突变基因的筛选</a>
 
 * [基于全基因组测序的线虫突变基因的筛选](pdfs/基于全基因组测序的线虫突变基因的筛选.pdf)
 * *in English*:[Causal Mutation Screening in C.elegans based on WGS](pdfs/Causal_Mutation_Screening_in_C.elegans_based_on_WGS.pdf)
