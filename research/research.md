@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Research Documents
+title: Research
+subtitle: Documents produced
 permalink: /research/
 ---
+# Catolog
 
 * TOC
 {:toc}
@@ -15,27 +17,29 @@ Here you find the output of my production
 
 Mainly with the help of Jarning and BioStaCs Lab @USTC
 
-* <a href="pdfs/基于全基因组测序的线虫突变基因的筛选.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">基于全基因组测序的线虫突变基因的筛选</a>
+* <a href="pdfs/基于全基因组测序的线虫突变基因的筛选.pdf" style="color: blue; text-decoration: underline;">基于全基因组测序的线虫突变基因的筛选</a>
 
-* [基于全基因组测序的线虫突变基因的筛选](pdfs/基于全基因组测序的线虫突变基因的筛选.pdf)
-* *in English*:[Causal Mutation Screening in C.elegans based on WGS](pdfs/Causal_Mutation_Screening_in_C.elegans_based_on_WGS.pdf)
+* *in English*: <a href="pdfs/Causal_Mutation_Screening_in_C.elegans_based_on_WGS.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">Causal Mutation Screening in C.elegans based on WGS</a>
 
 ## Master thesis
 
-* *English*:[Integrating single cell transcriptomic data to track and compare microglias temporal responding of AD and aging process](pdfs/Integrating_single_cell_transcriptomic_data_to_track_and_compare_microglias_temporal_responding_of_AD_and_aging_process.pdf)
-* [治疗B细胞淋巴瘤的EZH2抑制剂](pdfs/治疗B细胞淋巴瘤的EZH2抑制剂.pdf)
+* *English*: <a href="pdfs/Integrating_single_cell_transcriptomic_data_to_track_and_compare_microglias_temporal_responding_of_AD_and_aging_process.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">Integrating single cell transcriptomic data to track and compare microglias temporal responding of AD and aging process</a>
+
+* *English*: <a href="pdfs/治疗B细胞淋巴瘤的EZH2抑制剂.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">治疗B细胞淋巴瘤的EZH2抑制剂</a>
 
 The following thesis projects were complted with the help of Song Lab and BioStaCs Lab @USTC
 
-* [对基因组三维结构在精子发生和干细胞系中的表征](pdfs/master_thesis.pdf)
+* <a href="pdfs/master_thesis.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">对基因组三维结构在精子发生和干细胞系中的表征</a>
 
 ## PhD thesis
 
 On going.
 
-* *English*:[Literature review on placenta pathology](pdfs/halftime_report.pdf)
-* *English*:[Literature review on single cell RNA-seq analysis](pdfs/snRNAseqPrinciple.pdf)
-* *R book*:[Bookdown discussing topics of single cell RNA-seq analysis](brainfo.github.io/book)
+* *English*:<a href="pdfs/halftime_report.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">Literature review on placenta pathology</a>
+
+* *English*:<a href="pdfs/snRNAseqPrinciple.pdf" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">Literature review on single cell RNA-seq analysis</a>
+
+* *R book*:<a href="brainfo.github.io/book" style="color: blue; text-decoration: underline;text-decoration-style: dotted;">Bookdown discussing topics of single cell RNA-seq analysis</a>
 
 ## Publication list
 
