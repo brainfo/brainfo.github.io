@@ -8,9 +8,7 @@ disqus_username: brainfo
 catalog: true
 tags:
     - bioinformatics
-    - computing
     - python
-    - hpc
     - server
 ---
 ## Q & A

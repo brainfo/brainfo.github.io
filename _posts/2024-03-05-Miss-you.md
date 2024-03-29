@@ -8,7 +8,6 @@ disqus_username: brainfo
 catalog: true
 tags:
     - 同人
-    - 言情
 ---
 
 

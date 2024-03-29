@@ -8,8 +8,6 @@ author:     "Ruby"
 disqus_username: brainfo
 catalog: true
 tags:
-    - daily
-    - knowledge
     - life
 ---
 此贴亦更新于[超理论坛](https://chaoli.club/index.php/9506/)，有的信息由坛友提供。
