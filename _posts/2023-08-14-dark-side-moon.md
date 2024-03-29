@@ -2,13 +2,14 @@
 layout:     post
 title:      "月之暗面"
 subtitle:   "比起成神，我愿意成为爱人"
-date:       2024-08-14
+date:       2023-08-14
 author:     "Ruby"
 disqus_username: brainfo
 catalog: true
 tags:
     - 同人
     - 言情
+    - 科幻
 ---
 
 
