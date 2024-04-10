@@ -2,14 +2,13 @@
 layout: page
 title: "Research"
 description: "Documents produced""
-header-img: "img/about-bg.jpg"
 multilingual: 'false'
 ---
 
 <!-- English Version -->
 <div class="post-container">
-  {% capture index %}{% include research/research.md %}{% endcapture %}
-  {{ index| markdownify }}
+  {% capture research %}{% include research/research.md %}{% endcapture %}
+  {{ research | markdownify }}
 </div>
 
 
