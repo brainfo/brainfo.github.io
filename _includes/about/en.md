@@ -1,9 +1,5 @@
-# About Me
-
-![generated at https://lab.magiconch.com/eva-title]('img/business_card.jpeg')
-
-Hong Jiang, \\
-PhD student, Medical Sciences, Karolinska Institutet \\
+Hong Jiang, \
+PhD student, Medical Sciences, Karolinska Institutet \
 - Current affiliation: [Developmental programming lab](https://www.thedenglab.org/)
 - Master's lab:
   - Projects proposed and led at: [Lab of aging and transcriptional regulation](http://staff.ustc.edu.cn/~songxy5/work.html)
