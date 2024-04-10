@@ -7,4 +7,4 @@ PhD student, Medical Sciences, Karolinska Institutet
   - Projects conducted mainly at: [Molecular and Cell Genetics Lab](https://mcg.ustc.edu.cn/)
 - Bachelor's Lab:
   - Top talented project lab: [Antibody Engineering Lab](https://www.researchgate.net/lab/Min-Wang-Lab)
-  - Proposed inter-university research project lab: [Biomedical Physics Institute](https://biophy.nju.edu.cn/English/Members/Faculty/20201026/i148921.html)
+  - Another research project lab: [Biomedical Physics Institute](https://biophy.nju.edu.cn/English/Members/Faculty/20201026/i148921.html)
