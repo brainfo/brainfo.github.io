@@ -13,8 +13,8 @@ multilingual: 'false'
 </select>
 
 <!-- English Version -->
-<div class="en post-container">
-  {% capture research %}{% include about/research.md %}{% endcapture %}
+<div class="post-container">
+  {% capture research %}{% include research/research.md %}{% endcapture %}
   {{ research| markdownify }}
 </div>
 
