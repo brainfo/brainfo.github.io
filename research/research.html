@@ -6,15 +6,9 @@ header-img: "img/about-bg.jpg"
 multilingual: 'false'
 ---
 
-<!-- Language Selector -->
-<select class="sel-lang" onchange="onLanChange(this.options[this.options.selectedIndex].value)">
-  <option value="0" selected> Chinese 中文 </option>
-  <option value="1"> English 英文 </option>
-</select>
-
 <!-- English Version -->
 <div class="post-container">
-  {% capture research %}{% include research/research.md %}{% endcapture %}
+  {% capture research %}{% include research/2024ver.md %}{% endcapture %}
   {{ research| markdownify }}
 </div>
 
