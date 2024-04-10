@@ -1,5 +1,5 @@
 Hong Jiang, \
-PhD student, Medical Sciences, Karolinska Institutet \
+PhD student, Medical Sciences, Karolinska Institutet
 - Current affiliation: [Developmental programming lab](https://www.thedenglab.org/)
 - Master's lab:
   - Projects proposed and led at: [Lab of aging and transcriptional regulation](http://staff.ustc.edu.cn/~songxy5/work.html)
