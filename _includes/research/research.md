@@ -1,4 +1,11 @@
-Here you find the output of my production
+---
+layout:     page
+title:      "Research"
+subtitle:   "Collections"
+disqus_username: brainfo
+---
+
+Here you find the collection of my production
 
 *These are supported by variety of funding sources, supervisors, collaborators and fellow students.*
 
