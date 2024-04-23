@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cell type specific response in disease and intervention",
+    "section": "",
+    "text": "Preface\nThis is a minimal benchmark for analyzing snRNA-seq data, especially with scverse and bioconductor communities. It will be continuously updated throughout my PhD years.\nFrom my current experience:",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#comments-on-snrna-seq-vs-scrna-seq",
+    "href": "index.html#comments-on-snrna-seq-vs-scrna-seq",
+    "title": "Cell type specific response in disease and intervention",
+    "section": "Comments on snRNA-seq vs scRNA-seq",
+    "text": "Comments on snRNA-seq vs scRNA-seq\nadvantages of snRNA-seq: does not require the preservation of cellular integrity during sample preparation, especially dissociation.\ndisadvantages of snRNA-seq: loss of biological signal for genes with little nuclear localization.\nInterpretation of DE results:\n\nassumption: nuclear abundances are a good proxy for the overall expression profile.\nconsiderations:\n\ntranscripts for strongly expressed genes might localize to the cytoplasm for efficient translation and subsequently be lost upon stripping.\ngenes with the same overall expression but differences in the rate of nuclear export may appear to be differentially expressed between clusters.\nIn the most pathological case, higher snRNA-seq abundances may indicate nuclear sequestration of transcripts for protein-coding genes and reduced activity of the relevant biological process, contrary to the usual interpretation of the effect of upregulation.\n\n\n\nRuby Jiang Stockholm, Swden\nAprilg 2024",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "1-Preprocess.html",
+    "href": "1-Preprocess.html",
+    "title": "1  Preprocess",
+    "section": "",
+    "text": "1.1 Empty droplets\nWe have no prior knowledge about whether a particular library (i.e., cell barcode) corresponds to cell-containing or empty droplets. Thus, we need to call cells from empty droplets based on the observed expression profiles. This is not entirely straightforward as empty droplets can contain ambient (i.e., extracellular) RNA that can be captured and sequenced, resulting in non-zero counts for libraries that do not contain any cell. The aim of empty droplets detection in most cases is to retains nucleus that would have been discarded by other threshold on total counts. Therefore, could use looser thresholds after this step.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preprocess</span>"
+    ]
+  },
+  {
+    "objectID": "1-Preprocess.html#empty-droplets",
+    "href": "1-Preprocess.html#empty-droplets",
+    "title": "1  Preprocess",
+    "section": "",
+    "text": "1.1.1 Statistical Modeling\nCell Ranger v3.0 and DropletUtils implemented utils to distinguish empty droplets. The algorithm has three key steps:\n\nfilter out genes with counts of zero for all barcodes\nestimate the profile of the ambient RNA pool (as gene count across barcodes with total counts &lt; 100 in DropletUtils or estimate expected number of recovered cells by OrdMag alg. in Cellranger)\ntest each barcode for deviations from this profile using a Dirichlet-multinomial model of UMI count sampling\n\nBarcodes with significant deviations are considered to be genuine cells\nUse a knee point filter to ensure that barcodes with large total counts are always retained\n\n\nCellranger uses an expected-cells and DropUtils uses by.rank as initial “cells”. But with the sample initial top number of cells, two implementations give slightly different retained cells. And I don’t get why this happens.\n\nIn cellranger 7.0, it estimates expected number of recovered cells by OrdMag alg. But I didn’t get to use this method.\nCellranger doesn’t explicitly tell what FDR cutoff it uses. But retained number of nucleus fell into the range between 0.001 to 0.05 of DropUtils.\nDropUtils uses barcodes with total counts &lt; 100 as initial empty drops, but this failed with the tested datasets, evident (e.g.) as in FDR distribution:\n\n\n\n1.1.2 Deep Learning\nCellbender provides a deep generative model of background-contaminated counts. The model is used for learning the background RNA profile, distinguishing cell-containing droplets from empty ones, and retrieving background-free gene expression profiles.\nThe model schema and network representation can be found in Figure 1g,h\nThis method has been benchmarked with UMI counts threshold and DecontX but not DropletUtils\n\n\n1.1.3 Could Cellbender retain more good nucleus?\nYES\nI summarized the general stats from the above mentioned methods with three in-house 10x snRNA-seq data:\n\nThresholds filtering is necessary and the most useful data clean method.\nIt doesn’t matter whether by detecting outliers or just setting hard cut-offs.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preprocess</span>"
+    ]
+  },
+  {
+    "objectID": "1-Preprocess.html#ambient-contamination",
+    "href": "1-Preprocess.html#ambient-contamination",
+    "title": "1  Preprocess",
+    "section": "1.2 Ambient contamination",
+    "text": "1.2 Ambient contamination\nI tested the combinations of the aforementioned empty droplets and ambient RNA detection methods (See diagram) with our in-house data and I’m convinced that Cellbender and cluster-based methods are of advantage.\nIn snRNA-seq, mtRNAs are natural controllers for ambient RNAs and thus can be leveraged in benchmarking.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preprocess</span>"
+    ]
+  },
+  {
+    "objectID": "2-RNAd.html",
+    "href": "2-RNAd.html",
+    "title": "2  RNA dynamics",
+    "section": "",
+    "text": "In this chapter, we deal with RNA dynamics inside nucleus.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>RNA dynamics</span>"
+    ]
+  }
+]
