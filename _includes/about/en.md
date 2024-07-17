@@ -4,13 +4,11 @@ PhD candidate | Developmental reprogramming, Karolinska Institutet | (+46) 72264
 
 ## EDUCATION
 
-| Karolinska Institutet (KI), PhD: Medical Sciences                                                          |                 |                          |     | 2021.11-Expected 2025.11 |
-| :--------------------------------------------------------------------------------------------------------- | :-------------- | :----------------------- | :-- | :----------------------- |
-| The Swedish National Graduate School in Medical Bioinformatics                                             |                 | 2022.03-Expected 2025.03 |     |                          |
-| University of Science and Technology of China (USTC), Master: Bioinformatics                               |                 | 2018.09-2021.06          |     |                          |
-| Nanjing University (NJU), Student Internship Program                                                       |                 |                          |     |                          |	         2017.03-2017.10
-| China Pharmaceutical University (CPU)                                                                      | 2014.09-2018.06 |                          |     |                          |
-| Bachelor: Pharmacy (National Base of Biology and Technology Education), Pharmacy Top-Notch Student Honored |                 |                          |     |                          |
+| Karolinska Institutet (KI), PhD: Medical Sciences|2021.11-Expected 2025.11 |
+| The Swedish National Graduate School in Medical Bioinformatics | 2022.03-Expected 2025.03 |
+| University of Science and Technology of China (USTC), Master: Bioinformatics | 2018.09-2021.06|
+| Nanjing University (NJU), Student Internship Program | 2017.03-2017.10 |
+| China Pharmaceutical University (CPU), Bachelor: Pharmacy (National Base of Biology and Technology Education), Pharmacy Top-Notch Student Honored | 2014.09-2018.06 | 
 
 ## MOTIVATION
 
