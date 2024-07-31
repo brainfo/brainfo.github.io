@@ -11,7 +11,7 @@ catalog: true
 tags:
     - writing
 ---
-Some believe that you should not use the active voice in formal scientific writing because scientific writing should be impersonal. While others like APA style [[1]] or standford writing in science course [[2]] prefer active voice basically to be concise (cut the words).
+Some believe that you should not use the active voice in formal scientific writing because scientific writing should be impersonal. While others like [APA style](https://academicguides.waldenu.edu/writingcenter/scholarlyvoice/activepassive) or [standford writing in science course](https://www.youtube.com/watch?v=x33Km7hRzP0&list=PL8yeejfiNxNBT2rTomRjmWNlgh4DBmHST&ab_channel=sciwritestanford) prefer active voice basically to be concise (cut the words).
 However, the active voice is not necessarily 'personal' as many actors can be 'non-person'. For example, 'Process X improves yield.' is more concise than 'Yield is improved by using process X.' And sometimes the actors too unimportant to begin a sentence.
 Both the active or passive voice have pros and cons. More resonably, the use of them should be dependent on
 
@@ -24,7 +24,7 @@ In essense, active voice stresses that the actor (or grammatical subject) preced
 
 ## Abstract examples
 
-Adapted from [[3]] by the University of Oxford [[4]].
+Copied from the [University of Oxford Scientific writing training resources](https://www.mpls.ox.ac.uk/training/resources-for-researcher-and-career-development/communication-skills/scientific-writing/the-passive-and-active-voices-and-when-to-to-use-them) where they adapted the abstracts from [a plos one paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194641).
 
 > the active style (combination) is more clear
 
@@ -65,10 +65,3 @@ Passive voice is usually appropriate because here the subject can be redundant a
 - [8](https://www.nature.com/articles/s41467-024-50799-8)
 - [49](https://www.nature.com/articles/s41467-024-50104-7)
 - [186](https://www.nature.com/articles/s41467-024-50583-8)
-
-## References
-
-[1](https://academicguides.waldenu.edu/writingcenter/scholarlyvoice/activepassive)
-[2](https://www.youtube.com/watch?v=x33Km7hRzP0&list=PL8yeejfiNxNBT2rTomRjmWNlgh4DBmHST&ab_channel=sciwritestanford)
-[3](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194641)
-[4](https://www.mpls.ox.ac.uk/training/resources-for-researcher-and-career-development/communication-skills/scientific-writing/the-passive-and-active-voices-and-when-to-to-use-them)
