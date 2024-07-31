@@ -44,7 +44,7 @@ The aim of an introduction is to provide **background, context, prior knowledge,
 
 with an intention of intriguing results section, where the readers can follow the flow of thoughts:
 
-- [active]you asked a question or stated an aim
+- [active] you asked a question or state an aim
 - which methods were adopted
   - [passive] when the method was well-defined before your study
   - [active] when the method was developed for this study and is wordy to summarize
