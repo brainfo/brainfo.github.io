@@ -44,13 +44,13 @@ The aim of an introduction is to provide **background, context, prior knowledge,
 
 with an intention of intriguing results section, where the readers can follow the flow of thoughts:
 
-- [active] you asked a question or state an aim
+- [**active**] you asked a question or state an aim
 - which methods were adopted
-  - [passive] when the method was well-defined before your study
-  - [active] when the method was developed for this study and is wordy to summarize
+  - [**passive**] when the method was well-defined before your study
+  - [**active**] when the method was developed for this study and is wordy to summarize
 - directly state the phenomena, avoid using a phenomena 'was observed', 'was determined/identified/found', because of redundancy as it's implied already as it's a part of results section
-  - [active]'measurement'/'research object' + 'verb' or 'treatment/action' + 'active verb' + 'measurement/research object'
-  - [passive] if strongly emphasize the phenomena and only imply the treatment or condition (depends on how long the sentence is before 'by treatment/condtion'): 'measurement'/'research object' + 'passive verb' + 'by treatment/condition'. Note that this can be wordy
+  - [**active**]'measurement'/'research object' + 'verb' or 'treatment/action' + 'active verb' + 'measurement/research object'
+  - [**passive**] if strongly emphasize the phenomena and only imply the treatment or condition (depends on how long the sentence is before 'by treatment/condtion'): 'measurement'/'research object' + 'passive verb' + 'by treatment/condition'. Note that this can be wordy
 
 ## Methods section
 
