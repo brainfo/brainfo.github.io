@@ -16,7 +16,7 @@ RSS: false
 #zhihu_username:     huxpro
 github_username:    brainfo
 twitter_username:   Ruby_Devinfo
-# lofter_username:    scilavisher
+lofter_username:    scilavisher
 #facebook_username:  huxpro
 linkedin_username:  hong-jiang-183b5b236
 
@@ -92,5 +92,7 @@ service-worker: true
 # Friends
 friends: [
     {title: "梁昊(Hao Liang)",
-    href: "http://www.lifesequence.co/"}
+    href: "http://www.lifesequence.co/"},
+    {title: "超理论坛(chaoli)",
+    href: "http://www.chaoli.club/"}
 ]
