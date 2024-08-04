@@ -7,7 +7,6 @@ author:     "Ruby"
 disqus_username: brainfo
 catalog: true
 tags:
-    - 文学
     - 诗歌
 ---
 

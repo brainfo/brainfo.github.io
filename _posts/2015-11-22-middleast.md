@@ -7,7 +7,7 @@ author:     "Ruby"
 disqus_username: brainfo
 catalog: true
 tags:
-    - 时事
+    - 政治哲学
 ---
 
 1947年11月29日，联合国大会以33票同意，13票反对，10票弃权，通过巴勒斯坦分治。

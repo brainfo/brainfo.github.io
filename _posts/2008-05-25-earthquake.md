@@ -8,7 +8,6 @@ disqus_username: brainfo
 catalog: true
 tags:
     - 诗歌
-    - 时事
 ---
 
 路，还是那条路
