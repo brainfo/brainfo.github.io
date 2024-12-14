@@ -8,11 +8,11 @@ Here you find the collection of my production
 ## Posters
 <div class="row">
   <div class="col-md-8" markdown="1">
-  <img height="600px" class="center-block" src="img/posters/deNBI_Hong_poster.png">
+  <img height="600px" class="center-block" src="/img/posters/deNBI_Hong_poster.png">
   </div>
   <div class="col-md-4" markdown="1">
   <!-- ![Alt Text](../img/folder/blah.jpg) -->
-  <img height="600px" class="center-block" src="img/posters/WomensDay.png">
+  <img height="600px" class="center-block" src="/img/posters/WomensDay.png">
   </div>
 </div>
 
