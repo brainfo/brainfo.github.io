@@ -7,7 +7,7 @@ Here you find the collection of my production
 
 ## Posters
 <div class="row">
-  <div class="col-md-8" markdown="1">
+  <div class="col-md-4" markdown="1">
   <img height="600px" class="center-block" src="images/deNBI_Hong_poster.png">
   </div>
   <div class="col-md-4" markdown="1">
