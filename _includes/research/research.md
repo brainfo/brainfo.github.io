@@ -5,14 +5,27 @@ Here you find the collection of my production
 * TOC
 {:toc}
 
-## Undergrate thesis
+## Posters
+<div class="row">
+  <div class="col-md-8" markdown="1">
+  <img height="600px" class="center-block" src="/img/posters/deNBI_Hong_poster.png">
+  </div>
+  <div class="col-md-4" markdown="1">
+  <!-- ![Alt Text](../img/folder/blah.jpg) -->
+  <img height="600px" class="center-block" src="/img/posters/deNBI_Hong_poster.png">
+  </div>
+</div>
+
+## Thesis
+
+### Undergrate thesis
 
 Mainly with the help of Jarning and BioStaCs Lab @USTC
 
 * [基于全基因组测序的线虫突变基因的筛选] (pdfs/基于全基因组测序的线虫突变基因的筛选.pdf)
 * *in English*:[Causal Mutation Screening in C.elegans based on WGS] (pdfs/Causal_Mutation_Screening_in_C.elegans_based_on_WGS.pdf)
 
-## Master thesis
+### Master thesis
 
 * *English*:[Integrating single cell transcriptomic data to track and compare microglias temporal responding of AD and aging process](pdfs/Integrating_single_cell_transcriptomic_data_to_track_and_compare_microglias_temporal_responding_of_AD_and_aging_process.pdf)
 * [治疗B细胞淋巴瘤的EZH2抑制剂](pdfs/治疗B细胞淋巴瘤的EZH2抑制剂.pdf)
@@ -21,7 +34,7 @@ The following thesis projects were complted with the help of Song Lab and BioSta
 
 * [对基因组三维结构在精子发生和干细胞系中的表征] (pdfs/master_thesis.pdf)
 
-## PhD thesis
+### PhD thesis
 
 On going.
 
