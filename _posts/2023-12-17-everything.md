@@ -26,6 +26,7 @@ Chapter 1.6: 既然我们称，一般也是practical的研究对象，细胞信�
 看起来是夏天产品，但我在北地没看到过新鲜的。泡菜是好吃的。
 
 ## 2023-11-27
+
 慢性病又叫Noncommunicable diseases.
 <https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases>
 信息补充 by @南城小镇

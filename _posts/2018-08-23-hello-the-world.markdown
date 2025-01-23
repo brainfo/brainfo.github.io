@@ -13,11 +13,6 @@ tags:
 
 > “Yeah It's on. ”
 
-
 ## 前言
 
 Ruby 的 Blog 就这么开通了。
-
-
-
-
